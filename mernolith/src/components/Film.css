@@ -1,0 +1,13 @@
+.film {
+  width: 23vw;
+  height: 60vh;
+  margin: 30px 5px 5px 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.film:hover {
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
