@@ -7,7 +7,6 @@ import FilmPage from "./FilmPage";
 import Home from "./Home";
 
 function App() {
-  let x = 0;
   return (
     <div className="app">
       <Header />
