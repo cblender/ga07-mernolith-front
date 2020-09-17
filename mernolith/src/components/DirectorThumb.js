@@ -8,11 +8,11 @@
 |__/     |__/|________/|__/  |__/|__/  \__/ \______/ |__/|__/   \___/  |__/  |_*/
 
 import React, { useState, useEffect } from "react";
-import "./DirectorPage.css";
+import "./DirectorThumb.css";
 import axios from "./axios";
 import Director from "./Director";
 
-function DirectorPage() {
+function DirectorThumb() {
   const [directors, setDirectors] = useState(null);
 
   useEffect(() => {
@@ -40,4 +40,4 @@ function DirectorPage() {
   );
 }
 
-export default DirectorPage;
+export default DirectorThumb;

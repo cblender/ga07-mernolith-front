@@ -8,11 +8,11 @@
 |__/     |__/|________/|__/  |__/|__/  \__/ \______/ |__/|__/   \___/  |__/  |_*/
 
 import React, { useState, useEffect } from "react";
-import "./FilmPage.css";
+import "./FilmThumb.css";
 import axios from "./axios";
 import Film from "./Film";
 
-function FilmPage() {
+function FilmThumb() {
   const [films, setFilms] = useState(null);
 
   useEffect(() => {
@@ -40,4 +40,4 @@ function FilmPage() {
   );
 }
 
-export default FilmPage;
+export default FilmThumb;
