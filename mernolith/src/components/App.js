@@ -14,6 +14,7 @@ import DirectorPage from "./DirectorPage";
 import { Route } from "react-router-dom";
 import FilmPage from "./FilmPage";
 import Home from "./Home";
+
 function App() {
   return (
     <div className="app">
