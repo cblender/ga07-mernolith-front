@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "./axios";
+import "./DirectorFilms.css";
+import DirectorFilmDisplay from "./DirectorFilmDisplay";
 
 function DirectorFilms({ match }) {
-  const [films, setFilms] = useState("");
+  const [films, setFilms] = useState(null);
 
   useEffect(() => {
     async function fetchFilms() {
       const res = await axios.get(`/directors/${match.params.id}`);
-      setFilms(res.data);
-      console.log(res.data);
+      console.log(res);
+      setFilms(res.data.films);
       return res;
     }
     fetchFilms();
@@ -17,14 +19,17 @@ function DirectorFilms({ match }) {
   return (
     <>
       {films && (
-        <>
-          {films.map((film) => (
+        <div className="film__container">
+          {films.length > 0 && (
             <>
-              {console.log(film)}
-              <h1>{film.title}</h1>
+              {films.map((id) => (
+                <>
+                  <DirectorFilmDisplay id={id} />
+                </>
+              ))}
             </>
-          ))}
-        </>
+          )}
+        </div>
       )}
     </>
   );
