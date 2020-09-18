@@ -5,6 +5,7 @@ import DirectorPage from "./DirectorPage";
 import { Route, HashRouter } from "react-router-dom";
 import FilmPage from "./FilmPage";
 import Home from "./Home";
+import DirectorFilms from "./DirectorFilms";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
             exact
             path="/films"
             render={({ match }) => <FilmPage match={match} />}
+          />
+          <Route
+            exact
+            path="/directors/:id"
+            render={({ match }) => <DirectorFilms match={match} />}
           />
         </main>
       </div>

@@ -31,7 +31,7 @@ function DirectorPage() {
         <>
           {directors.map((director) => (
             <>
-              <Director img={director.image} />
+              <Director _id={director._id} img={director.image} />
             </>
           ))}
         </>
