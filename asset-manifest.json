@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ga08-mernolith-front/static/css/main.2640ed48.chunk.css",
-    "main.js": "/ga08-mernolith-front/static/js/main.8647f65f.chunk.js",
-    "main.js.map": "/ga08-mernolith-front/static/js/main.8647f65f.chunk.js.map",
+    "main.css": "/ga08-mernolith-front/static/css/main.65814011.chunk.css",
+    "main.js": "/ga08-mernolith-front/static/js/main.dc6a4d48.chunk.js",
+    "main.js.map": "/ga08-mernolith-front/static/js/main.dc6a4d48.chunk.js.map",
     "runtime-main.js": "/ga08-mernolith-front/static/js/runtime-main.425041e5.js",
     "runtime-main.js.map": "/ga08-mernolith-front/static/js/runtime-main.425041e5.js.map",
     "static/js/2.5c7a1ce2.chunk.js": "/ga08-mernolith-front/static/js/2.5c7a1ce2.chunk.js",
     "static/js/2.5c7a1ce2.chunk.js.map": "/ga08-mernolith-front/static/js/2.5c7a1ce2.chunk.js.map",
     "index.html": "/ga08-mernolith-front/index.html",
-    "precache-manifest.96225482063bd1086530577058d8d1d9.js": "/ga08-mernolith-front/precache-manifest.96225482063bd1086530577058d8d1d9.js",
+    "precache-manifest.4e29fa6e03f5029a24c38533651d1502.js": "/ga08-mernolith-front/precache-manifest.4e29fa6e03f5029a24c38533651d1502.js",
     "service-worker.js": "/ga08-mernolith-front/service-worker.js",
-    "static/css/main.2640ed48.chunk.css.map": "/ga08-mernolith-front/static/css/main.2640ed48.chunk.css.map",
+    "static/css/main.65814011.chunk.css.map": "/ga08-mernolith-front/static/css/main.65814011.chunk.css.map",
     "static/js/2.5c7a1ce2.chunk.js.LICENSE.txt": "/ga08-mernolith-front/static/js/2.5c7a1ce2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.425041e5.js",
     "static/js/2.5c7a1ce2.chunk.js",
-    "static/css/main.2640ed48.chunk.css",
-    "static/js/main.8647f65f.chunk.js"
+    "static/css/main.65814011.chunk.css",
+    "static/js/main.dc6a4d48.chunk.js"
   ]
 }
