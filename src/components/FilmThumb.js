@@ -27,16 +27,18 @@ function FilmThumb() {
   }, []);
 
   return (
-    <div className="universal film__container">
-      {films && (
-        <>
-          {films.map((film) => (
-            <>
-              <Film img={film.poster} />
-            </>
-          ))}
-        </>
-      )}
+    <div className="universal film__background">
+      <div className="film__container">
+        {films && (
+          <>
+            {films.map((film) => (
+              <>
+                <Film img={film.poster} />
+              </>
+            ))}
+          </>
+        )}
+      </div>
     </div>
   );
 }

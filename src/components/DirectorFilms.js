@@ -38,16 +38,7 @@ function DirectorFilms({ match }) {
           />
         </div>
       )}
-      {addFilm && (
-        <div className="SelectedDirectorFilm">
-          <AddDirectorFilm
-            setUpdateFilms={setUpdateFilms}
-            updateFilms={updateFilms}
-            match={match}
-            setAddFilm={setAddFilm}
-          />
-        </div>
-      )}
+
       <>
         {films && (
           <>
@@ -72,6 +63,17 @@ function DirectorFilms({ match }) {
           </>
         )}
       </>
+
+      {addFilm && (
+        <div className="SelectedDirectorFilm">
+          <AddDirectorFilm
+            setUpdateFilms={setUpdateFilms}
+            updateFilms={updateFilms}
+            match={match}
+            setAddFilm={setAddFilm}
+          />
+        </div>
+      )}
     </div>
   );
 }

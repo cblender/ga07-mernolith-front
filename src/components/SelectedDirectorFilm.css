@@ -1,3 +1,8 @@
+h2 {
+  font-family: "BalboaPlus", sans-serif;
+  font-size: 60px;
+}
+
 .modal__buttons {
   background-color: rgba(14, 13, 13, 0.777);
 }

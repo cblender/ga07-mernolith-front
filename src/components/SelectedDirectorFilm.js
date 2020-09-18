@@ -67,8 +67,8 @@ function SelectedDirectorFilm({
           {console.log(filmModal)}
           <div className="words__flex">
             <div className="modal__words">
-              <h1>{filmModal.title}</h1>
-
+              <h2>{filmModal.title}</h2>
+              <br />
               <h3>
                 {filmModal.releaseDate}
                 <span style={{ float: "right", textTransform: "capitalize" }}>

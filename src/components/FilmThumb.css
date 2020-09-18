@@ -1,4 +1,10 @@
+.film__background {
+  background: black;
+}
+
 .film__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  background: rgba(0, 0, 0, 0);
 }
