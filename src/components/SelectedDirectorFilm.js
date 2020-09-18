@@ -65,17 +65,29 @@ function SelectedDirectorFilm({
             style={{ backgroundImage: `url(${filmModal.poster})` }}
           />
           {console.log(filmModal)}
-          <div className="modal__words">
-            <h3>{filmModal.title}</h3>
-            <p>{filmModal.description}</p>
+          <div className="words__flex">
+            <div className="modal__words">
+              <h1>{filmModal.title}</h1>
+
+              <h3>
+                {filmModal.releaseDate}
+                <span style={{ float: "right", textTransform: "capitalize" }}>
+                  {filmModal.genres.join(", ")}
+                </span>
+              </h3>
+              <br />
+              <p>{filmModal.description}</p>
+            </div>
           </div>
-          <div className="modal__buttons">
-            <IconButton onClick={hi}>
-              <CreateRoundedIcon style={{ color: "white" }} />
-            </IconButton>
-            <IconButton onClick={deleteFilm}>
-              <DeleteRoundedIcon style={{ color: "white" }} />
-            </IconButton>
+          <div className="buttons__flex">
+            <div className="modal__buttons">
+              <IconButton onClick={hi}>
+                <CreateRoundedIcon style={{ color: "white" }} />
+              </IconButton>
+              <IconButton onClick={deleteFilm}>
+                <DeleteRoundedIcon style={{ color: "white" }} />
+              </IconButton>
+            </div>
           </div>
         </div>
       )}
