@@ -2,7 +2,7 @@
   "name": "mernolith",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cblender.github.io/ga08-mernolith-front/mernolith",
+  "homepage": "http://cblender.github.io/ga08-mernolith-front",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
