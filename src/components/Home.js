@@ -10,6 +10,26 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD:mernolith/src/components/Home.js
+
+// fetchDirectorList = () => {
+//   fetch(/* LINK to directors db*/ )
+//     .then((response) => response.json())
+//     .then((alldirectors) => {
+//       console.log("========================================");
+//       console.log(alldirectors);
+//       console.log("========================================");
+//       alldirectors.results.forEach((director) => {
+//         let directorList =
+//           /* STATE - list of directors - should be empty at this point */
+//           directorList.push(director);
+//         /* SET STATE: list of directors = directorList */
+//       });
+//     });
+//   console.log(/* STATE: list of directors */);
+// };
+
+=======
 /*
 fetchDirectorList = () => {
   fetch()
@@ -28,6 +48,7 @@ fetchDirectorList = () => {
   console.log(// STATE: list of directors);
 };
 */
+>>>>>>> master:src/components/Home.js
 function Home() {
   return (
     <div className="home__container">
