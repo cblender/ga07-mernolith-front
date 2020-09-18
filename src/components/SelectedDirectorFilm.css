@@ -1,6 +1,9 @@
 .modal__image {
   width: 30vw;
   height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .modal__container {
   width: 95vw;
