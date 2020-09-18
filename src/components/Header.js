@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import Button from "./Button";
+import ButtonStories, { add, edit, remove } from "../stories/Button.stories";
 
 function Header() {
   return (
@@ -9,6 +11,11 @@ function Header() {
         <h1>MERNOLITH</h1>{" "}
         {/* UPDATE: change "MERNOLITH" to a JS variable that we can pass page title data to. */}
       </Link>
+      <div className="buttons">
+        {remove()}
+        {add()}
+        {edit()}
+      </div>
     </div>
   );
 }
