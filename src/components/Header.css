@@ -12,10 +12,20 @@
   top: 0;
   z-index: 2;
   font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
 }
 
 .title {
   letter-spacing: 4px;
   left: 5vw;
   position: relative;
+}
+
+.button > button {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  padding-right: 2vw;
 }
