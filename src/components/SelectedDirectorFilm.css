@@ -1,0 +1,19 @@
+.modal__image {
+  width: 30vw;
+  height: 60vh;
+}
+.modal__container {
+  width: 95vw;
+  background-color: rgba(14, 13, 13, 0.897);
+  margin: 20px;
+  display: flex;
+}
+.modal__right {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px;
+}

@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import "./DirectorFilms.css";
 import DirectorFilmDisplay from "./DirectorFilmDisplay";
+import SelectedDirectorFilm from "./SelectedDirectorFilm";
 
 function DirectorFilms({ match }) {
   const [films, setFilms] = useState(null);
+  const [selectedFilm, setSelectedFilm] = useState(null);
 
   useEffect(() => {
     async function fetchFilms() {
@@ -18,19 +20,26 @@ function DirectorFilms({ match }) {
 
   return (
     <>
-      {films && (
-        <div className="film__container">
-          {films.length > 0 && (
-            <>
-              {films.map((id) => (
-                <>
-                  <DirectorFilmDisplay id={id} />
-                </>
-              ))}
-            </>
-          )}
+      {selectedFilm && (
+        <div className="AddDirectorFilmContainer">
+          <SelectedDirectorFilm id={selectedFilm} />
         </div>
       )}
+      <>
+        {films && (
+          <div className="film__container">
+            {films.length > 0 && (
+              <>
+                {films.map((id) => (
+                  <button onClick={() => setSelectedFilm(id)}>
+                    <DirectorFilmDisplay id={id} />
+                  </button>
+                ))}
+              </>
+            )}
+          </div>
+        )}
+      </>
     </>
   );
 }

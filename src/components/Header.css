@@ -28,4 +28,6 @@
 .buttons {
   display: flex;
   padding-right: 2vw;
+  justify-content: center;
+  align-items: center;
 }

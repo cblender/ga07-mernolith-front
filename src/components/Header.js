@@ -14,6 +14,16 @@ function Header() {
         {/* UPDATE: change "MERNOLITH" to a JS variable that we can pass page title data to. */}
       </Link>
       <div className="buttons">
+        <Link
+          to="/films"
+          style={{
+            textDecoration: "none",
+            color: "white",
+            marginRight: "2vw",
+          }}
+        >
+          <h3>All Films</h3>
+        </Link>
         {remove()}
         {add()}
         {edit()}
