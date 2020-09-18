@@ -1,5 +1,6 @@
 import React from "react";
 import "./Film.css";
+import "./UNIVERSAL.css";
 
 function Film({ img }) {
   return (

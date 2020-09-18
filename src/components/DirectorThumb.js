@@ -9,6 +9,7 @@
 
 import React, { useState, useEffect } from "react";
 import "./DirectorThumb.css";
+import "./UNIVERSAL.css";
 import axios from "./axios";
 import Director from "./Director";
 
@@ -26,7 +27,7 @@ function DirectorThumb() {
   }, []);
 
   return (
-    <div className="directors_container">
+    <div className="universal directors_container">
       {directors && (
         <>
           {directors.map((director) => (

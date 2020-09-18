@@ -9,6 +9,7 @@
 
 import React, { useState, useEffect } from "react";
 import "./FilmThumb.css";
+import "./UNIVERSAL.css";
 import axios from "./axios";
 import Film from "./Film";
 
@@ -26,7 +27,7 @@ function FilmThumb() {
   }, []);
 
   return (
-    <div className="film__container">
+    <div className="universal film__container">
       {films && (
         <>
           {films.map((film) => (

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import "./DirectorFilms.css";
+import "./UNIVERSAL.css";
 import DirectorFilmDisplay from "./DirectorFilmDisplay";
 import SelectedDirectorFilm from "./SelectedDirectorFilm";
 import AddDirectorFilm from "./AddDirectorFilm";
@@ -25,7 +26,7 @@ function DirectorFilms({ match }) {
   }, [updateFilms]);
 
   return (
-    <div className="directorFilm__page">
+    <div className="universal directorFilm__page">
       {selectedFilm && (
         <div className="SelectedDirectorFilm">
           <SelectedDirectorFilm

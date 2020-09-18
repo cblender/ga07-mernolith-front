@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "BalboaPlus";
+  src: local("BalboaPlus"),
+    url(./fonts/balboaplus-inline.ttf) format("truetype");
+}
+
 * {
   margin: 0;
 }
