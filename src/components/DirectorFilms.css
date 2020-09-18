@@ -1,9 +1,14 @@
 .film__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 10px;
 }
-.AddDirectorFilmContainer {
+.SelectedDirectorFilm {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.directorFilm__page {
+  background-color: rgb(226, 226, 226);
+  height: 150vh;
 }

@@ -7,6 +7,7 @@ import SelectedDirectorFilm from "./SelectedDirectorFilm";
 function DirectorFilms({ match }) {
   const [films, setFilms] = useState(null);
   const [selectedFilm, setSelectedFilm] = useState(null);
+  const [updateFilms, setUpdateFilms] = useState(0);
 
   useEffect(() => {
     async function fetchFilms() {
@@ -15,14 +16,22 @@ function DirectorFilms({ match }) {
       setFilms(res.data.films);
       return res;
     }
+    window.scrollTo(0, 0);
+
     fetchFilms();
-  }, []);
+  }, [updateFilms]);
 
   return (
-    <>
+    <div className="directorFilm__page">
       {selectedFilm && (
-        <div className="AddDirectorFilmContainer">
-          <SelectedDirectorFilm id={selectedFilm} />
+        <div className="SelectedDirectorFilm">
+          <SelectedDirectorFilm
+            setUpdateFilms={setUpdateFilms}
+            updateFilms={updateFilms}
+            films={films}
+            id={selectedFilm}
+            match={match}
+          />
         </div>
       )}
       <>
@@ -31,7 +40,11 @@ function DirectorFilms({ match }) {
             {films.length > 0 && (
               <>
                 {films.map((id) => (
-                  <button onClick={() => setSelectedFilm(id)}>
+                  <button
+                    style={{ margin: "3px", border: "none" }}
+                    onClick={() => setSelectedFilm(id)}
+                  >
+                    {console.log(updateFilms)}
                     <DirectorFilmDisplay id={id} />
                   </button>
                 ))}
@@ -40,7 +53,7 @@ function DirectorFilms({ match }) {
           </div>
         )}
       </>
-    </>
+    </div>
   );
 }
 
