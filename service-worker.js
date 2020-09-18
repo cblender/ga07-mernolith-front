@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ga08-mernolith-front/precache-manifest.16eb690052f7e8676992e4db523dc64b.js"
+  "/ga08-mernolith-front/precache-manifest.0b9a40cb9d2c20b66df26c441bc88dfb.js"
 );
 
 self.addEventListener('message', (event) => {
