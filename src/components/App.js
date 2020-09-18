@@ -3,8 +3,7 @@ import "./App.css";
 import Header from "./Header.js";
 import DirectorPage from "./DirectorPage";
 import { Route, HashRouter } from "react-router-dom";
-import FilmPage from "./FilmPage";
-import Home from "./Home";
+import FilmThumb from "./FilmThumb";
 import DirectorFilms from "./DirectorFilms";
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
           <Route
             exact
             path="/films"
-            render={({ match }) => <FilmPage match={match} />}
+            render={({ match }) => <FilmThumb match={match} />}
           />
           <Route
             exact
