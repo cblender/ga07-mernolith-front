@@ -8,6 +8,7 @@
 |__/     |__/|________/|__/  |__/|__/  \__/ \______/ |__/|__/   \___/  |__/  |_*/
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./DirectorThumb.css";
 import axios from "./axios";
 import Director from "./Director";

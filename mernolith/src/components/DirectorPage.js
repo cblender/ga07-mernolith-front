@@ -4,6 +4,7 @@ import axios from "./axios";
 import Director from "./Director";
 import FilmThumb from "./FilmThumb";
 import Film from "./Film";
+import { Link } from "react-router-dom";
 
 function DirectorPage() {
   const [films, setFilms] = useState(null);

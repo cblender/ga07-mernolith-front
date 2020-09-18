@@ -14,6 +14,7 @@ import DirectorThumb from "./DirectorThumb";
 import { Route } from "react-router-dom";
 import FilmThumb from "./FilmThumb";
 import Home from "./Home";
+import DirectorPage from "./DirectorPage";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         />
         <Route
           exact
-          path={`directors/${someDirectorID}`}
+          path={"/directors/:id"}
           // NOTE!!! Define "someDirectorID" correctly - the react router should render a DirectorPage with an id parameter matching the "someDirectorID" variable.
           render={({ match }) => <DirectorPage match={match} />}
         />
