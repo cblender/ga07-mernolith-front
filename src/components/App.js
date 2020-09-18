@@ -13,7 +13,11 @@ function App() {
       <div className="app">
         <Header />
         <main>
-          <Route exact path="/" render={() => <Home />} />
+          <Route
+            exact
+            path="/"
+            render={({ match }) => <DirectorPage match={match} />}
+          />
           <Route
             exact
             path="/directors"
