@@ -3,10 +3,13 @@ import axios from "./axios";
 import "./DirectorFilms.css";
 import DirectorFilmDisplay from "./DirectorFilmDisplay";
 import SelectedDirectorFilm from "./SelectedDirectorFilm";
+import AddDirectorFilm from "./AddDirectorFilm";
+import { Button } from "@material-ui/core";
 
 function DirectorFilms({ match }) {
   const [films, setFilms] = useState(null);
   const [selectedFilm, setSelectedFilm] = useState(null);
+  const [addFilm, setAddFilm] = useState(null);
   const [updateFilms, setUpdateFilms] = useState(0);
 
   useEffect(() => {
@@ -34,23 +37,38 @@ function DirectorFilms({ match }) {
           />
         </div>
       )}
+      {addFilm && (
+        <div className="SelectedDirectorFilm">
+          <AddDirectorFilm
+            setUpdateFilms={setUpdateFilms}
+            updateFilms={updateFilms}
+            match={match}
+            setAddFilm={setAddFilm}
+          />
+        </div>
+      )}
       <>
         {films && (
-          <div className="film__container">
-            {films.length > 0 && (
-              <>
-                {films.map((id) => (
-                  <button
-                    style={{ margin: "3px", border: "none" }}
-                    onClick={() => setSelectedFilm(id)}
-                  >
-                    {console.log(updateFilms)}
-                    <DirectorFilmDisplay id={id} />
-                  </button>
-                ))}
-              </>
-            )}
-          </div>
+          <>
+            <Button className="addFilmButton" onClick={() => setAddFilm(true)}>
+              Add Film
+            </Button>
+            <div className="film__container">
+              {films.length > 0 && (
+                <>
+                  {films.map((id) => (
+                    <button
+                      style={{ margin: "3px", border: "none" }}
+                      onClick={() => setSelectedFilm(id)}
+                    >
+                      {console.log(updateFilms)}
+                      <DirectorFilmDisplay id={id} />
+                    </button>
+                  ))}
+                </>
+              )}
+            </div>
+          </>
         )}
       </>
     </div>
