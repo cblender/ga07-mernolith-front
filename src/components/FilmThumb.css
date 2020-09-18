@@ -1,5 +1,6 @@
-.film__container {
+.film_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-gap: 10px 10px;
   justify-items: center;
 }

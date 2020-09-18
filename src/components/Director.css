@@ -1,11 +1,12 @@
 .director {
-  width: 23vw;
+  width: 30vw;
   height: 60vh;
   margin: 30px 5px 5px 5px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .director:hover {
   -moz-box-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px black;
