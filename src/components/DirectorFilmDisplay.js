@@ -3,7 +3,7 @@ import "./DirectorFilmDisplay.css";
 import axios from "./axios";
 
 function DirectorFilmDisplay({ id }) {
-  const [film, setFilm] = useState(null);
+  const [film, setFilm] = useState(0);
 
   useEffect(() => {
     async function fetchFilms() {

@@ -11,7 +11,7 @@
   margin: 20px;
   display: flex;
 }
-.modal__right {
+.modal__words {
   display: flex;
   flex-direction: column;
   color: white;
