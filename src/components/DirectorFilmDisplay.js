@@ -8,7 +8,7 @@ function DirectorFilmDisplay({ id }) {
   useEffect(() => {
     async function fetchFilms() {
       const res = await axios.get(`/films/${id}`);
-      console.log(res);
+      console.log(res.data);
       setFilm(res.data);
       return res;
     }
