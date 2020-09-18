@@ -1,36 +1,22 @@
-import React from 'react';
-
-import { Button } from './Button';
+import React from "react";
+import Button from "../components/Button";
+import EditIcon from "@material-ui/icons/Edit";
+import AddIcon from "@material-ui/icons/Add";
+import DeleteOutlineOutlinedIcon from "@material-ui/icons/DeleteOutlineOutlined";
 
 export default {
-  title: 'Example/Button',
+  title: "Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
-const Template = (args) => <Button {...args} />;
+export function edit() {
+  return <Button type={<EditIcon />} />;
+}
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+export function add() {
+  return <Button type={<AddIcon />} />;
+}
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+export function remove() {
+  return <Button type={<DeleteOutlineOutlinedIcon />} />;
+}
