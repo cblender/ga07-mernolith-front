@@ -31,6 +31,12 @@ function App() {
           path="/films"
           render={({ match }) => <FilmThumb match={match} />}
         />
+        <Route
+          exact
+          path={`directors/${someDirectorID}`}
+          // NOTE!!! Define "someDirectorID" correctly - the react router should render a DirectorPage with an id parameter matching the "someDirectorID" variable.
+          render={({ match }) => <DirectorPage match={match} />}
+        />
       </main>
     </div>
   );

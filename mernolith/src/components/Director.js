@@ -6,10 +6,7 @@ function Director({ match, img }) {
     <div
       style={{ backgroundImage: `url(${img})`, borderRadius: "3px" }}
       className="director"
-    >
-
-    </div>
-    
+    ></div>
   );
 }
 
