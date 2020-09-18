@@ -1,0 +1,18 @@
+.form__container {
+  width: 95vw;
+  background-color: rgba(14, 13, 13, 0.897);
+  color: white;
+  margin: 20px;
+  display: flex;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__container > textarea {
+  width: 80%;
+  margin: 20px;
+  resize: none;
+  overflow: scroll;
+}
