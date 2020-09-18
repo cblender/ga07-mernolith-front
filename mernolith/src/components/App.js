@@ -31,6 +31,11 @@ function App() {
           path="/films"
           render={({ match }) => <FilmPage match={match} />}
         />
+        <Route
+          exact
+          path="/directors/:directorID"
+          render={({ match }) => <SingularDirector match={match} />}
+        />
       </main>
     </div>
   );
