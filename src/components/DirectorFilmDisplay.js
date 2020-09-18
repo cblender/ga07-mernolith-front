@@ -13,7 +13,7 @@ function DirectorFilmDisplay({ id }) {
       return res;
     }
     fetchFilms();
-  }, []);
+  }, [id]);
 
   return (
     <>

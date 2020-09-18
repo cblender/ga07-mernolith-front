@@ -1,16 +1,21 @@
+.modal__container {
+}
+
 .modal__image {
-  width: 30vw;
-  height: 60vh;
+  width: 42vw;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .modal__container {
-  width: 95vw;
+  width: 100vw;
   background-color: rgba(14, 13, 13, 0.897);
   margin: 20px;
   display: flex;
 }
+
 .modal__words {
   display: flex;
   flex-direction: column;

@@ -8,7 +8,6 @@
 |__/     |__/|________/|__/  |__/|__/  \__/ \______/ |__/|__/   \___/  |__/  |_*/
 
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./DirectorThumb.css";
 import axios from "./axios";
 import Director from "./Director";
@@ -27,14 +26,12 @@ function DirectorThumb() {
   }, []);
 
   return (
-    <div className="directors__container">
+    <div className="directors_container">
       {directors && (
         <>
           {directors.map((director) => (
-            <div class="directorThumb">
-              <Link to={`/directors/${director.id}`}>
-                <Director img={director.image} />
-              </Link>
+            <div className="directorThumb">
+              <Director img={director.image} />
             </div>
           ))}
         </>

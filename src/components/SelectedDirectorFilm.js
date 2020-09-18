@@ -56,7 +56,10 @@ function SelectedDirectorFilm({
   return (
     <div>
       {filmModal && (
-        <div className="modal__container">
+        <div
+          className="modal__container"
+          style={{ backgroundImage: `url(${filmModal.still})` }}
+        >
           <div
             className="modal__image"
             style={{ backgroundImage: `url(${filmModal.poster})` }}
