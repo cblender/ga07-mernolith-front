@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Film.css";
 
-function Film({ match, img }) {
+function Film({ img }) {
   return (
     <div style={{ backgroundImage: `url(${img})` }} className="film"></div>
   );

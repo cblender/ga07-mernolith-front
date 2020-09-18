@@ -26,7 +26,7 @@ function FilmThumb() {
   }, []);
 
   return (
-    <div className="film_container">
+    <div className="film__container">
       {films && (
         <>
           {films.map((film) => (
