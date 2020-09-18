@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ga08-mernolith-front/static/css/main.f6d4cdfc.chunk.css",
+    "main.js": "/ga08-mernolith-front/static/js/main.1c2b1284.chunk.js",
+    "main.js.map": "/ga08-mernolith-front/static/js/main.1c2b1284.chunk.js.map",
+    "runtime-main.js": "/ga08-mernolith-front/static/js/runtime-main.425041e5.js",
+    "runtime-main.js.map": "/ga08-mernolith-front/static/js/runtime-main.425041e5.js.map",
+    "static/js/2.7595bdcd.chunk.js": "/ga08-mernolith-front/static/js/2.7595bdcd.chunk.js",
+    "static/js/2.7595bdcd.chunk.js.map": "/ga08-mernolith-front/static/js/2.7595bdcd.chunk.js.map",
+    "index.html": "/ga08-mernolith-front/index.html",
+    "precache-manifest.16eb690052f7e8676992e4db523dc64b.js": "/ga08-mernolith-front/precache-manifest.16eb690052f7e8676992e4db523dc64b.js",
+    "service-worker.js": "/ga08-mernolith-front/service-worker.js",
+    "static/css/main.f6d4cdfc.chunk.css.map": "/ga08-mernolith-front/static/css/main.f6d4cdfc.chunk.css.map",
+    "static/js/2.7595bdcd.chunk.js.LICENSE.txt": "/ga08-mernolith-front/static/js/2.7595bdcd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.425041e5.js",
+    "static/js/2.7595bdcd.chunk.js",
+    "static/css/main.f6d4cdfc.chunk.css",
+    "static/js/main.1c2b1284.chunk.js"
+  ]
+}
