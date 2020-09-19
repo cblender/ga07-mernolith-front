@@ -26,7 +26,7 @@ function DirectorFilms({ match }) {
   }, [updateFilms]);
 
   return (
-    <div className="universal directorFilm__page">
+    <div className=" directorFilm__page">
       {selectedFilm && (
         <div className="SelectedDirectorFilm">
           <SelectedDirectorFilm
