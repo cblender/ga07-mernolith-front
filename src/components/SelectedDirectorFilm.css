@@ -4,7 +4,7 @@ h2 {
 }
 
 .modal__background {
-  height: 75vh;
+  height: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,8 +15,7 @@ h2 {
 }
 
 .modal__container {
-  height: 69vh;
-  width: 100vw;
+  height: 40vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,24 +27,29 @@ h2 {
 
 /* NOTE!!!!  DO NOT MAKE CHANGES TO MODAL_IMAGE WIDTH PROPERTY WITHOUT CHECKING CONTENT_BACKGROUND BELOW. */
 .modal__image {
-  width: 42vh;
-  height: 69vh;
+  height: 40vw;
+  width: 25vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .flex__flex {
-  height: 69vh;
+  height: 40vw;
+  width: 75vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 /* NOTE!!!! THE MIN-WIDTH PROPERTY DEPENDS ON THE WIDTH PROPERTY OF MODAL_IMAGE, ABOVE */
 .content__background {
-  min-width: calc(100vw - 42vh);
-  background-color: rgba(14, 13, 13, 0.555);
+  /* min-width: 70vw; */
+  background-color: rgba(14, 13, 13, 0.777);
   padding: 25px;
 }
 
@@ -63,6 +67,7 @@ h2 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   padding-top: 12px;
+  padding-right: 1.5vw;
 }
 
 .buttons__flex {

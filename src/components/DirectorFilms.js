@@ -42,7 +42,11 @@ function DirectorFilms({ match }) {
       <>
         {films && (
           <>
-            <Button className="addFilmButton" onClick={() => setAddFilm(true)}>
+            <Button
+              variant="outline-light"
+              className="addFilmButton"
+              onClick={() => setAddFilm(true)}
+            >
               Add Film
             </Button>
             <div className="directorFilm__container">

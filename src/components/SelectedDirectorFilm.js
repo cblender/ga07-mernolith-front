@@ -56,10 +56,7 @@ function SelectedDirectorFilm({
   return (
     <div>
       {filmModal && (
-        <div
-          className="modal__background"
-          style={{ backgroundImage: `url(${filmModal.still})` }}
-        >
+        <div className="modal__background">
           <div
             className="modal__container"
             // style={{ backgroundImage: `url(https://i.imgur.com/lGufCmC.png)` }}
@@ -71,7 +68,10 @@ function SelectedDirectorFilm({
 
             {console.log(filmModal)}
 
-            <div className="flex__flex">
+            <div
+              className="flex__flex"
+              style={{ backgroundImage: `url(${filmModal.still})` }}
+            >
               <div className="content__background">
                 <div className="words__flex">
                   <div className="modal__words">
