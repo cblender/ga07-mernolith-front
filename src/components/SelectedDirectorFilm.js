@@ -57,36 +57,47 @@ function SelectedDirectorFilm({
     <div>
       {filmModal && (
         <div
-          className="modal__container"
+          className="modal__background"
           style={{ backgroundImage: `url(${filmModal.still})` }}
         >
-          <div
-            className="modal__image"
-            style={{ backgroundImage: `url(${filmModal.poster})` }}
-          />
-          {console.log(filmModal)}
-          <div className="words__flex">
-            <div className="modal__words">
-              <h2>{filmModal.title}</h2>
-              <br />
-              <h3>
-                {filmModal.releaseDate}
-                <span style={{ float: "right", textTransform: "capitalize" }}>
-                  {filmModal.genres.join(", ")}
-                </span>
-              </h3>
-              <br />
-              <p>{filmModal.description}</p>
-            </div>
-          </div>
-          <div className="buttons__flex">
-            <div className="modal__buttons">
-              <IconButton onClick={hi}>
-                <CreateRoundedIcon style={{ color: "white" }} />
-              </IconButton>
-              <IconButton onClick={deleteFilm}>
-                <DeleteRoundedIcon style={{ color: "white" }} />
-              </IconButton>
+          <div className="modal__container">
+            <div
+              className="modal__image"
+              style={{ backgroundImage: `url(${filmModal.poster})` }}
+            />
+
+            {console.log(filmModal)}
+
+            <div className="flex__flex">
+              <div className="content__background">
+                <div className="words__flex">
+                  <div className="modal__words">
+                    <h2>{filmModal.title}</h2>
+                    <br />
+                    <h3>
+                      {filmModal.releaseDate}
+                      <span
+                        style={{ float: "right", textTransform: "capitalize" }}
+                      >
+                        {filmModal.genres.join(", ")}
+                      </span>
+                    </h3>
+                    <br />
+                    <p>{filmModal.description}</p>
+                  </div>
+                </div>
+
+                <div className="buttons__flex">
+                  <div className="modal__buttons">
+                    <IconButton onClick={hi}>
+                      <CreateRoundedIcon style={{ color: "white" }} />
+                    </IconButton>
+                    <IconButton onClick={deleteFilm}>
+                      <DeleteRoundedIcon style={{ color: "white" }} />
+                    </IconButton>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

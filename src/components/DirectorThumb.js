@@ -31,7 +31,11 @@ function DirectorThumb() {
       {directors && (
         <>
           {directors.map((director) => (
-            <Director id={director._id} img={director.image} />
+            <Director
+              id={director._id}
+              img={director.image}
+              name={director.name}
+            />
           ))}
         </>
       )}

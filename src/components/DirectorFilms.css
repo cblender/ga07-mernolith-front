@@ -1,14 +1,15 @@
 .film__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
   margin: 2vw;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  grid-gap: 0.333vw;
 }
 .SelectedDirectorFilm {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.directorFilm__page {
+.director__container {
+  background: white;
+  padding: 2vw;
 }

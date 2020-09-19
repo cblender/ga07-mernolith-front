@@ -3,30 +3,50 @@ h2 {
   font-size: 60px;
 }
 
-.modal__buttons {
-  background-color: rgba(14, 13, 13, 0.777);
-}
-
-.modal__container {
-  height: 100vh;
-  width: 100vw;
+.modal__background {
+  height: 75vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: rgba(14, 13, 13, 0.777);
-  margin: 20px;
+}
+
+.modal__container {
+  height: 69;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .modal__image {
-  width: 25vw;
+  width: 42vh;
   height: 69vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.flex__flex {
+  height: 69vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.content__background {
+  background-color: rgba(14, 13, 13, 0.777);
+  padding: 25px;
+}
+
+.words__flex {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .modal__words {
@@ -34,21 +54,19 @@ h2 {
   flex-direction: column;
   color: white;
   width: 100%;
-
-  padding: 50px;
-  background-color: rgba(14, 13, 13, 0.777);
-}
-
-.words__flex {
-  height: 69vh;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 12px;
 }
 
 .buttons__flex {
-  height: 80vh;
+  width: 75vw;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.modal__buttons {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 25px;
 }
