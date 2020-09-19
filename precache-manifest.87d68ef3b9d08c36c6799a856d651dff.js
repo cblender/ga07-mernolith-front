@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d86d2f23a5293ec499ced8b4e476eac3",
+    "revision": "1151eb91da25e53c53d389e7efe4b73c",
     "url": "/ga08-mernolith-front/index.html"
   },
   {
-    "revision": "25ee88f2dd68d6f98415",
-    "url": "/ga08-mernolith-front/static/css/main.0e8576e1.chunk.css"
+    "revision": "1b5aa5d1d286925b0e68",
+    "url": "/ga08-mernolith-front/static/css/main.eac41c7f.chunk.css"
   },
   {
-    "revision": "f34c6d2cd3d3e4d18c72",
-    "url": "/ga08-mernolith-front/static/js/2.a6a29071.chunk.js"
+    "revision": "2bc099c0c13f9f409fc6",
+    "url": "/ga08-mernolith-front/static/js/2.45db7ac3.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/ga08-mernolith-front/static/js/2.a6a29071.chunk.js.LICENSE.txt"
+    "url": "/ga08-mernolith-front/static/js/2.45db7ac3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "25ee88f2dd68d6f98415",
-    "url": "/ga08-mernolith-front/static/js/main.92bb244b.chunk.js"
+    "revision": "1b5aa5d1d286925b0e68",
+    "url": "/ga08-mernolith-front/static/js/main.bb3e2b05.chunk.js"
   },
   {
     "revision": "9cbed5f92bb14fa7b4fb",
