@@ -2,6 +2,7 @@
 
 The Mernolith is a curated collection of film directors with some of their most important works. You can add directors and films, edit them, and delete them.
 
+Deployed site: https://cblender.github.io/ga08-mernolith-front/
 # Homepage
 
 The homepage serves up all directors in the database in a grid layout. Clicking on a director directs the user to the page for that director.
