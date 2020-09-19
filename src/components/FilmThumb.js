@@ -28,7 +28,7 @@ function FilmThumb() {
 
   return (
     <div className="universal film__background">
-      <div className="film__container">
+      <div className="allFilms__container">
         {films && (
           <>
             {films.map((film) => (

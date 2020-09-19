@@ -45,7 +45,7 @@ function DirectorFilms({ match }) {
             <Button className="addFilmButton" onClick={() => setAddFilm(true)}>
               Add Film
             </Button>
-            <div className="film__container">
+            <div className="directorFilm__container">
               {films.length > 0 && (
                 <>
                   {films.map((id) => (

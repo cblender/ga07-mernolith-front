@@ -1,10 +1,10 @@
 .film__background {
-  background: black;
+  background: rgba(0, 0, 0, 0);
 }
 
-.film__container {
+.allFilms__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  background: rgba(0, 0, 0, 0);
+  grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
+  margin: 2vw;
+  grid-gap: 1vw;
 }

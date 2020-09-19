@@ -60,7 +60,10 @@ function SelectedDirectorFilm({
           className="modal__background"
           style={{ backgroundImage: `url(${filmModal.still})` }}
         >
-          <div className="modal__container">
+          <div
+            className="modal__container"
+            // style={{ backgroundImage: `url(https://i.imgur.com/lGufCmC.png)` }}
+          >
             <div
               className="modal__image"
               style={{ backgroundImage: `url(${filmModal.poster})` }}

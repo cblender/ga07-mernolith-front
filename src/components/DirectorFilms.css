@@ -1,4 +1,4 @@
-.film__container {
+.directorFilm__container {
   display: grid;
   grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
   margin: 2vw;
